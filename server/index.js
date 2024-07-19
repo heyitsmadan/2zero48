@@ -10,13 +10,14 @@ app.use(cors());
 
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://2zero48.netlify.app",
         methods: ["GET", "POST"],
     },
 });
 
-server.listen(3001, () => {
-    console.log("Server started");
+const PORT = process.env.PORT || 3001;
+server.listen(PORT, () => {
+    console.log(`Server started on port ${PORT}`);
 });
 
 const rooms = {};
