@@ -5,7 +5,7 @@
 
 ## Gameplay
 
-![2zero48](https://imgur.com/4g1D1zd)
+![2zero48](https://i.imgur.com/4g1D1zd.gif)
 
 ## Technologies Used
 - React
