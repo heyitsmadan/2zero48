@@ -227,8 +227,7 @@ body {
   display: inline;
 }
 
-.tile.new,
-.overlay {
+.tile.new {
   animation-duration: 0.3s;
   animation-name: newTile;
   animation-fill-mode: forwards;
@@ -245,48 +244,7 @@ body {
   }
 }
 
-.overlay {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  left: 0px;
-  right: 0px;
-  font-size: 55px;
-  font-weight: bolder;
-  border-radius: 7px;
-}
-
-.tryAgain {
-  background-color: #876;
-  color: #fff;
-  height: 40px;
-  width: 200px;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  border: 2px solid white;
-}
-
-.gameOver {
-  background-size: contain;
-  background-image: url(./assets/img/game-over.gif);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  text-align: center;
-}
-
-.overlay .message {
+.message {
   color: #666;
 }
 
