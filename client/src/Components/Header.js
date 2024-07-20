@@ -1,7 +1,15 @@
-import React from "react"
+import React, { useEffect, useState } from "react";
 
 export default function Header() {
-    return (
-        <h1 className="header">2048</h1>
-    )
+  const [fontLoaded, setFontLoaded] = useState(false);
+
+  useEffect(() => {
+    document.fonts.ready.then(() => setFontLoaded(true));
+  }, []);
+
+  return (
+    <h1 className="header" style={{ visibility: fontLoaded ? 'visible' : 'hidden' }}>
+      2048
+    </h1>
+  );
 }
