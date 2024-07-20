@@ -1,9 +1,14 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function RoomControls({ socket }) {
     const [roomId, setRoomId] = useState("");
     const [roomCreated, setRoomCreated] = useState(false);
+    const [fontLoaded, setFontLoaded] = useState(false);
+
+    useEffect(() => {
+        document.fonts.ready.then(() => setFontLoaded(true));
+    }, []);
 
     const createRoom = () => {
         socket.emit("createRoom");
@@ -20,7 +25,7 @@ export default function RoomControls({ socket }) {
     return (
         <div>
             {!roomCreated && (
-                <div className="room-controls">
+                <div className="room-controls" style={{ visibility: fontLoaded ? 'visible' : 'hidden' }}>
                     <div onClick={createRoom} className="createRoomButton">create room</div>
                     <div className="join-room-controls">
                         <input
