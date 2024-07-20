@@ -260,6 +260,7 @@ body {
   color: #EDF7B5;
   font-style: italic;
   letter-spacing: 0.5rem;
+  visibility: hidden;
 }
 
 .room-controls {
@@ -268,6 +269,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 
 .join-room-controls {
