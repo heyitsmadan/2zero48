@@ -46,7 +46,7 @@ io.on("connection", (socket) => {
             rooms[roomId].players.push(socket.id);
             const { seedA, seedB } = rooms[roomId];
             socket.emit("joinedRoom", { roomId, seedA, seedB });
-            io.to(roomId).emit("playerJoined", "A new player has joined the room");
+            io.to(roomId).emit("playerJoined");
 
             if (rooms[roomId].players.length === 2) {
                 io.to(roomId).emit("roomReady");
