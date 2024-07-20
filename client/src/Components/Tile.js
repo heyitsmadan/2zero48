@@ -4,7 +4,7 @@ import '../../src/main.scss';
 const Tile = ({ tile }) => {
   const tileRef = useRef(null);
 
-  const uniqueKey = `${tile.value}-${tile.row}-${tile.column}-${tile.timestamp || Date.now()}`;
+  const uniqueKey = `${Date.now()}`;
 
   let classArray = ["tile"];
   classArray.push(`tile${tile.value}`);
