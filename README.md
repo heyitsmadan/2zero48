@@ -5,8 +5,7 @@
 
 ## Gameplay
 
-![2zero48](https://github.com/user-attachments/assets/cb16816e-b255-4ac2-9b43-cbbaddf67262)
-
+![2zero48 (7)](https://github.com/user-attachments/assets/076cae28-9230-4aeb-b3c6-4e08a630edf7)
 
 ## Technologies Used
 - React
