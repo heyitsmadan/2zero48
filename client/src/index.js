@@ -43,7 +43,10 @@ function App() {
 
   return (
     <div className="app">
-      <div className="landingPage">
+      <div className="mobile-message">
+      this site is only available on desktop devices.
+      </div>
+      <div className="desktop-only"><div className="landingPage">
         <Header />
         <RoomControls socket={socket} />
       </div>
@@ -52,6 +55,7 @@ function App() {
         {seedB && <BoardB socket={socket} seed={seedB} roomId={currentRoom} roomReady={roomReady} />}
       </div>
       {currentRoom && <div className="current-room">room id: {currentRoom}</div>}
+    </div>
     </div>
   );
 }
